@@ -1,6 +1,6 @@
 # Documentation
 
-**Letterly** is a Python-based web application developed to simplify the process of generating personalized cover letters for job applicants. By providing relevant personal and job-related details, the app leverages AI to create tailored cover letters, making the job application process more efficient and accessible.
+**Letterly** is a AI-Powered web application developed to simplify the process of generating personalized cover letters for job applicants. By providing relevant personal and job-related details, the app leverages AI to create tailored cover letters, making the job application process more efficient and accessible.
 
 ## 🚩 **Problem Statement**
 
