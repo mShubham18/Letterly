@@ -57,7 +57,7 @@ with st.sidebar:
 
 if submit_button:
     with st.spinner("Generating your cover letter, please wait..."):
-        time.sleep(15)
+        time.sleep(18)
     response = model.generate_content([prompt])
     st.write(response.text)
 
@@ -77,3 +77,52 @@ if submit_button:
             file_name=docx_filename,
             mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
         )
+
+footer = """<style>
+:root {
+    --footer-text-color: black; /* Light mode text color */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --footer-text-color: white; /* Dark mode text color */
+    }
+}
+
+a:link, a:visited {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:hover, a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: var(--footer-text-color);
+    text-align: center;
+    background-color: transparent; /* Make background transparent */
+    font-size: 14px;
+}
+
+.footer p {
+    display: inline;
+}
+
+.footer a {
+    display: inline; /* Ensure the link is inline */
+    color: var(--footer-text-color);
+}
+</style>
+<div class="footer">
+<p>Developed with ❤ by <a href="https://github.com/mShubham18/Letterly" target="_blank"> Shubham Mishra</a></p>
+</div>
+"""
+
+st.markdown(footer, unsafe_allow_html=True)
