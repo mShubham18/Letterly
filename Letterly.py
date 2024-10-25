@@ -1,10 +1,10 @@
 from lib.libraries import *
 from src.Letterly.config.configuration import model, generation_config
-from apikey import API_KEY
+#from apikey import API_KEY
 from docx import Document
 import streamlit as st
 import time
-
+API_KEY = os.getenv('API_KEY')
 genai.configure(api_key=API_KEY)
 
 st.set_page_config(layout="wide")
