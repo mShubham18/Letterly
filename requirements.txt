@@ -1,0 +1,6 @@
+setuptools
+pandas
+streamlit
+google-generativeai
+logging
+python-docx
