@@ -12,4 +12,3 @@ from src.Letterly.components.degrees import Degree
 from src.Letterly.components.skillset import Skillset
 from src.Letterly.components.job_roles import Job_roles
 from src.Letterly.constants.constants import notice_period,prof_journey,personal_projects
-from src.Letterly.components.to_document import create_docx,download_file
