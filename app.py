@@ -38,10 +38,12 @@ with st.sidebar:
           f"- Job Description: \"{job_description}\"\n"
           f"- Professional Experience: \"{prof_journey}\"\n"
           f"- Personal Projects: \"{personal_projects}\"\n"
+          f"- Skill set of candidate: \"{Skillset}\"\n"
           f"- Academic Background: \"{degree}\" from  \"{university}\"\n"
           f"- Availability or notice period: \"{notice_period}\"\n"
           f"Do not include the *where did you hear about us* part, and please do not include any suggestion \n"
-          f"Include today's date, \n"
+          f"Always use: Dear Hiring Manager, {company_name}, \n"
+          f"Include date \n"
           f"The cover letter should highlight the candidate's qualifications, relevant experience, and enthusiasm for the role while maintaining a professional tone."
           f"End the letter with a thank you to the hiring manager and sign off with \"Sincerely,\" followed by the candidate's name \"{fullname}\". and other mail, phone number below one another")
 if submit_button:
